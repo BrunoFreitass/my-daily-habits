@@ -33,6 +33,10 @@ body {
   background: #ffffff;
 }
 
+.panel + .panel {
+  margin-top: 24px;
+}
+
 .panel-header,
 .panel-content {
   padding: 20px;
@@ -44,6 +48,58 @@ body {
 
 .panel-header h2 {
   margin: 0;
+}
+
+.habit-form {
+  display: grid;
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.form-error {
+  margin: 0;
+  color: #b42318;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.habit-form button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #1f2937;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.habit-form button:hover {
+  background: #374151;
 }
 
 .habit-list {
